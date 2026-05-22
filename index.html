@@ -1,1 +1,377 @@
-<h1>Hello World! This is my Git Project</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website | Lorie Lorr's Coding Journey</title>
+    <style>
+        /* This is CSS - it makes the website look pretty!
+           Don't worry, it's easier than it looks. You'll learn it step by step. */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Main container - like a box that holds everything */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            padding: 40px;
+        }
+
+        /* Header section */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #667eea;
+            margin: 15px 0 10px 0;
+        }
+
+        /* Paragraph styling */
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* List styling */
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+        }
+
+        /* Image styling */
+        .image-placeholder {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        /* Fun facts box */
+        .fun-fact {
+            background: #ffeaa7;
+            padding: 15px;
+            border-left: 4px solid #fdcb6e;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .fun-fact strong {
+            color: #e17055;
+        }
+
+        /* Name highlight */
+        .name-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Counter demo */
+        .counter-box {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .counter-display {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .btn-small {
+            padding: 8px 15px;
+            margin: 0 5px;
+            font-size: 0.9em;
+        }
+
+        /* Signature style */
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 1.5em;
+            color: #764ba2;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+
+        /* Responsive design - makes it look good on phones */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>🌟 Welcome to My First Website! 🌟</h1>
+        <div class="subtitle">Created by <span class="name-highlight">Lorie Lorr</span> | A beginner's journey into web development</div>
+    </header>
+
+    <!-- ABOUT ME SECTION -->
+    <div class="section">
+        <h2>📖 About <span class="name-highlight">Lorie Lorr</span></h2>
+        <p>Hello! I'm <strong>Lorie Lorr</strong>, and I'm so excited to share my very first website with you. I'm just starting my journey into coding and web development, and this is my first big step. It might not be perfect, but it's mine, and I'm proud of it!</p>
+        <p>I'm learning HTML (the structure), CSS (the styling), and soon JavaScript (the interactivity). Every day I discover something new and amazing that I can create with just a few lines of code.</p>
+        <div class="fun-fact">
+            <strong>🎉 Fun Fact about Lorie:</strong> This is my very first website! I built it from scratch using HTML and CSS. Every beginner starts somewhere, and this is my starting point. 🚀
+        </div>
+    </div>
+
+    <!-- WHAT I'M LEARNING SECTION -->
+    <div class="section">
+        <h2>📚 What <span class="name-highlight">Lorie</span> Is Learning</h2>
+        <p>Here are the technologies I'm currently learning and practicing:</p>
+        <ul>
+            <li><strong>HTML</strong> - The skeleton of websites (I'm using it right now!)</li>
+            <li><strong>CSS</strong> - Makes everything look beautiful and colorful</li>
+            <li><strong>JavaScript</strong> - Adds interactivity and cool features</li>
+            <li><strong>Git & GitHub</strong> - To share my code with others</li>
+        </ul>
+        <p>I'm following online tutorials, watching YouTube videos, and practicing every day. The best way to learn is by building things!</p>
+    </div>
+
+    <!-- MY GOALS SECTION -->
+    <div class="section">
+        <h2>🎯 <span class="name-highlight">Lorie's</span> Goals</h2>
+        <ol>
+            <li>Build 10 websites by the end of this year</li>
+            <li>Learn enough JavaScript to make games and apps</li>
+            <li>Contribute to open source projects</li>
+            <li>Help other beginners learn to code</li>
+            <li>Eventually get my first web developer job! 💼</li>
+        </ol>
+    </div>
+
+    <!-- MY FAVORITE THINGS -->
+    <div class="section">
+        <h2>❤️ <span class="name-highlight">Lorie's</span> Favorite Things</h2>
+        <ul>
+            <li>🌮 Shawarma Wrap and pizza (coding fuel!)</li>
+            <li>🎮 Video games - especially puzzle and strategy games</li>
+            <li>📚 Reading fantasy books and manga</li>
+            <li>🎵 Lo-fi music while coding</li>
+            <li>☕ Coffee and tea - can't code without them!</li>
+        </ul>
+    </div>
+
+    <!-- INTERACTIVE COUNTER (JavaScript Demo) -->
+    <div class="section">
+        <h2>🎮 Interactive Button Game by <span class="name-highlight">Lorie</span></h2>
+        <p>Look! I added a working counter. This uses JavaScript. Click the buttons below and see what happens:</p>
+        
+        <div class="counter-box">
+            <h3>Lorie's Click Counter</h3>
+            <div class="counter-display" id="counterNumber">0</div>
+            <button class="btn btn-small" onclick="changeCounter(-1)">- Decrease</button>
+            <button class="btn btn-small" onclick="changeCounter(1)">+ Increase</button>
+            <button class="btn btn-small" onclick="resetCounter()">↺ Reset</button>
+        </div>
+        <p>See? With just a few lines of JavaScript, <strong>Lorie</strong> made these buttons work! 🎉</p>
+    </div>
+
+    <!-- INSPIRATION SECTION -->
+    <div class="section">
+        <h2>💡 <span class="name-highlight">Lorie's</span> Inspiration</h2>
+        <div class="image-placeholder">
+            🌈 "Every expert was once a beginner" - Lorie believes in this! 🌈
+        </div>
+        <p><strong>Lorie Lorr</strong> used to think that building websites was impossible. But then she learned that all you need is curiosity, patience, and practice. Every line of code teaches you something new. Don't be afraid to make mistakes - that's how we learn!</p>
+        <p>If you're also a beginner, remember: we're all on this journey together. Keep coding, keep learning, and most importantly, have fun with it!</p>
+        <div class="signature">- Lorie Lorr 🌟</div>
+    </div>
+
+    <!-- TIPS FOR BEGINNERS -->
+    <div class="section">
+        <h2>💪 Tips from <span class="name-highlight">Lorie</span> for Fellow Beginners</h2>
+        <ul>
+            <li>✨ Start with HTML and CSS - they're friendly and visual</li>
+            <li>✨ Practice every day, even if just for 15 minutes</li>
+            <li>✨ Build small projects - don't try to make the next Facebook on day one!</li>
+            <li>✨ Use free resources: freeCodeCamp, MDN Web Docs, YouTube</li>
+            <li>✨ Join coding communities - you're not alone!</li>
+            <li>✨ Celebrate small victories - every step forward counts</li>
+        </ul>
+        <a href="#" class="btn" onclick="showEncouragement()">✨ Click for Encouragement from Lorie ✨</a>
+    </div>
+
+    <!-- CONTACT / SOCIAL SECTION -->
+    <div class="section">
+        <h2>📫 Connect with <span class="name-highlight">Lorie Lorr</span></h2>
+        <p>I'd love to connect with other beginners and developers. You can find me on:</p>
+        <ul>
+            <li>🐙 GitHub: <a href="#" style="color: #667eea;">github.com/laurr-codes</a></li>
+            <li>📧 Email: montecalboloriejoy@gmail.com</li>
+        </ul>
+        <p>Feel free to reach out - I'd love to see your projects too!</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>🚀 Created by <strong>Lorie Lorr</strong> | My First Website | Built with ❤️, HTML, and CSS | © 2024</p>
+        <p>Remember: Every expert was once a beginner. Keep going, from Lorie! 🌟</p>
+    </footer>
+</div>
+
+<!-- JAVASCRIPT SECTION -->
+<script>
+    // This is JavaScript - it makes the website interactive!
+    // Don't worry if it looks complicated - you'll learn this later
+    
+    // Counter variable - starts at 0
+    let count = 0;
+    
+    // Function to change the counter
+    function changeCounter(amount) {
+        count = count + amount;
+        // Make sure the counter doesn't go below 0
+        if (count < 0) {
+            count = 0;
+        }
+        // Update the number on the screen
+        document.getElementById('counterNumber').innerHTML = count;
+        
+        // Add a little animation effect
+        let counterElement = document.getElementById('counterNumber');
+        counterElement.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+            counterElement.style.transform = 'scale(1)';
+        }, 200);
+    }
+    
+    // Function to reset the counter
+    function resetCounter() {
+        count = 0;
+        document.getElementById('counterNumber').innerHTML = count;
+    }
+    
+    // Function for the encouragement button
+    function showEncouragement() {
+        const messages = [
+            "🎉 You're doing amazing, keep going! - Lorie 🎉",
+            "💪 Every line of code makes you better! You've got this! 💪",
+            "🌟 Programming is super fun! Sarah believes in you! 🌟",
+            "🚀 Today's beginner is tomorrow's expert! Keep coding! 🚀",
+            "✨ Mistakes = learning opportunities. You're growing every day! ✨",
+            "🌈 The best time to start was yesterday. The second best time is NOW! - Sarah 🌈"
+        ];
+        const randomIndex = Math.floor(Math.random() * messages.length);
+        alert(messages[randomIndex]);
+    }
+    
+    // Console message (for developers - check browser console)
+    console.log("🎉 Welcome to Lorie Lorr's first website! 🎉");
+    console.log("You can open the console (F12) to see this message!");
+    
+    // Add a welcome message when page loads
+    window.onload = function() {
+        console.log("Lorie's website loaded! Ready to learn and grow!");
+        console.log("Thank you for visiting :)");
+    };
+</script>
+
+</body>
+</html>
+```
